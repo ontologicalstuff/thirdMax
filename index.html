@@ -9,22 +9,22 @@
 <body>
     <script>
 
-var thirdMax = function (nums) {
-nums = nums.sort(function(a, b){return a - b});
-/* The sort method combined with the comparison function sorts the nums array numerically, from smallest to largest */
-let set = new Set(nums);
-/* The new Set method converts the nums array into a set, thus stripping it of any duplicates */
-nums = Array.from(set);
-/* The Array.from method converts the set into a ray, and here the nums array is the original, stripped of any duplicates it may have contained in its original form*/
-	if (nums.length >= 3) {
-  	return nums[nums.length - 3]
-  } else {
-  		return nums[nums.length - 1];
-  }
-}
+        var thirdMax = function (nums) {
+        nums = nums.sort(function(a, b){return a - b});
+        /* The sort method combined with the comparison function sorts the nums array numerically, from smallest to largest */
+        let set = new Set(nums);
+        /* The new Set method converts the nums array into a set, thus stripping it of any duplicates */
+        nums = Array.from(set);
+        /* The Array.from method converts the set into a ray, and here the nums array is the original, stripped of any duplicates it may have contained in its original form*/
+            if (nums.length >= 3) {
+            return nums[nums.length - 3]
+        } else {
+                return nums[nums.length - 1];
+        }
+        }
 
-alert(thirdMax([8, 7, 7, 59, 78, 78, 1, 8]))
-/* Example invoking of the thirdMax function*/
+            alert(thirdMax([8, 7, 7, 59, 78, 78, 1, 8]))
+            /* Example invoking of the thirdMax function*/
     </script>
 </body>
 </html>
