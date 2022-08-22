@@ -15,7 +15,7 @@
         let set = new Set(nums);
         /* The new Set method converts the nums array into a set, thus stripping it of any duplicates */
         nums = Array.from(set);
-        /* The Array.from method converts the set into an array, and here the nums array is the original, stripped of any duplicates it may have contained in its original form*/
+        /* The Array.from method converts the set into an array, and here the nums array is the original numerically ascending minus any duplicates it may have contained in its original form*/
             if (nums.length >= 3) {
             return nums[nums.length - 3]
         } else {
